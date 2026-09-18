@@ -1,0 +1,295 @@
+Machine: machine1
+CPU: 0
+
+================ binary ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.67077 s
+ns/query: 334.153
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        3441078477      cycles:u                                                                (83,30%)
+        1457052795      instructions:u                   #    0,42  insn per cycle              (83,25%)
+         438857254      cache-references:u                                                      (83,34%)
+         213533441      cache-misses:u                   #   48,66% of all cache refs           (83,38%)
+         337160390      branches:u                                                              (83,37%)
+          53021779      branch-misses:u                  #   15,73% of all branches             (83,36%)
+
+       1,752853551 seconds time elapsed
+
+       1,714665000 seconds user
+       0,037035000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.62517 s
+ns/query: 325.034
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        3350950436      cycles:u                                                                (83,30%)
+        1455149360      instructions:u                   #    0,43  insn per cycle              (83,30%)
+         418484506      cache-references:u                                                      (83,32%)
+         193278366      cache-misses:u                   #   46,19% of all cache refs           (83,36%)
+         336628142      branches:u                                                              (83,35%)
+          52889766      branch-misses:u                  #   15,71% of all branches             (83,35%)
+
+       1,703021504 seconds time elapsed
+
+       1,667641000 seconds user
+       0,034992000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.67045 s
+ns/query: 334.089
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        3440537380      cycles:u                                                                (83,32%)
+        1452318623      instructions:u                   #    0,42  insn per cycle              (83,35%)
+         439428537      cache-references:u                                                      (83,34%)
+         214013813      cache-misses:u                   #   48,70% of all cache refs           (83,35%)
+         336490033      branches:u                                                              (83,34%)
+          53062957      branch-misses:u                  #   15,77% of all branches             (83,30%)
+
+       1,743517241 seconds time elapsed
+
+       1,712133000 seconds user
+       0,031002000 seconds sys
+
+
+
+================ bst ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.923 s
+ns/query: 384.601
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        4107536034      cycles:u                                                                (83,31%)
+        1510709837      instructions:u                   #    0,37  insn per cycle              (83,32%)
+         263827766      cache-references:u                                                      (83,33%)
+         107256256      cache-misses:u                   #   40,65% of all cache refs           (83,36%)
+         335968317      branches:u                                                              (83,37%)
+           2992929      branch-misses:u                  #    0,89% of all branches             (83,32%)
+
+       2,111302445 seconds time elapsed
+
+       2,045772000 seconds user
+       0,064992000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.9214 s
+ns/query: 384.28
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        4099818614      cycles:u                                                                (83,34%)
+        1510892448      instructions:u                   #    0,37  insn per cycle              (83,34%)
+         263802180      cache-references:u                                                      (83,34%)
+         107120739      cache-misses:u                   #   40,61% of all cache refs           (83,35%)
+         334427187      branches:u                                                              (83,34%)
+           3013394      branch-misses:u                  #    0,90% of all branches             (83,29%)
+
+       2,109127840 seconds time elapsed
+
+       2,035753000 seconds user
+       0,072991000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.95593 s
+ns/query: 391.186
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        4185905755      cycles:u                                                                (83,30%)
+        1510867942      instructions:u                   #    0,36  insn per cycle              (83,31%)
+         266844281      cache-references:u                                                      (83,36%)
+         107953724      cache-misses:u                   #   40,46% of all cache refs           (83,35%)
+         335914204      branches:u                                                              (83,34%)
+           3004871      branch-misses:u                  #    0,89% of all branches             (83,34%)
+
+       2,146501318 seconds time elapsed
+
+       2,082995000 seconds user
+       0,062999000 seconds sys
+
+
+
+================ eytzinger ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.792912 s
+ns/query: 158.582
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+        1700163761      cycles:u                                                                (83,29%)
+        1195895409      instructions:u                   #    0,70  insn per cycle              (83,37%)
+          65080163      cache-references:u                                                      (83,36%)
+          20304774      cache-misses:u                   #   31,20% of all cache refs           (83,36%)
+         256357221      branches:u                                                              (83,37%)
+           2772353      branch-misses:u                  #    1,08% of all branches             (83,25%)
+
+       0,873876242 seconds time elapsed
+
+       0,837885000 seconds user
+       0,035952000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.784655 s
+ns/query: 156.931
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+        1684849015      cycles:u                                                                (83,35%)
+        1188127552      instructions:u                   #    0,71  insn per cycle              (83,34%)
+          65107918      cache-references:u                                                      (83,36%)
+          20306323      cache-misses:u                   #   31,19% of all cache refs           (83,34%)
+         255456595      branches:u                                                              (83,34%)
+           2773948      branch-misses:u                  #    1,09% of all branches             (83,27%)
+
+       0,866258562 seconds time elapsed
+
+       0,830076000 seconds user
+       0,036003000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.828794 s
+ns/query: 165.759
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+        1769035025      cycles:u                                                                (83,29%)
+        1192779366      instructions:u                   #    0,67  insn per cycle              (83,27%)
+          65480687      cache-references:u                                                      (83,38%)
+          20632477      cache-misses:u                   #   31,51% of all cache refs           (83,39%)
+         255371092      branches:u                                                              (83,39%)
+           2773981      branch-misses:u                  #    1,09% of all branches             (83,29%)
+
+       0,917238057 seconds time elapsed
+
+       0,874405000 seconds user
+       0,040925000 seconds sys
+
+
+
+================ eytzinger_prefetch ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.629627 s
+ns/query: 125.925
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+        1371604763      cycles:u                                                                (83,22%)
+        1852930418      instructions:u                   #    1,35  insn per cycle              (83,35%)
+          84889757      cache-references:u                                                      (83,36%)
+          25298782      cache-misses:u                   #   29,80% of all cache refs           (83,36%)
+         355688302      branches:u                                                              (83,37%)
+           2832870      branch-misses:u                  #    0,80% of all branches             (83,34%)
+
+       0,710765037 seconds time elapsed
+
+       0,677628000 seconds user
+       0,032981000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.636196 s
+ns/query: 127.239
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+        1383540549      cycles:u                                                                (83,34%)
+        1851992937      instructions:u                   #    1,34  insn per cycle              (83,33%)
+          85313222      cache-references:u                                                      (83,32%)
+          25672201      cache-misses:u                   #   30,09% of all cache refs           (83,33%)
+         356343763      branches:u                                                              (83,33%)
+           2829250      branch-misses:u                  #    0,79% of all branches             (83,34%)
+
+       0,721370374 seconds time elapsed
+
+       0,686250000 seconds user
+       0,035012000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.629384 s
+ns/query: 125.877
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+        1368113620      cycles:u                                                                (83,34%)
+        1861497104      instructions:u                   #    1,36  insn per cycle              (83,35%)
+          85168425      cache-references:u                                                      (83,34%)
+          25488008      cache-misses:u                   #   29,93% of all cache refs           (83,35%)
+         355652995      branches:u                                                              (83,35%)
+           2834652      branch-misses:u                  #    0,80% of all branches             (83,26%)
+
+       0,710410843 seconds time elapsed
+
+       0,674297000 seconds user
+       0,036015000 seconds sys
+
+
+

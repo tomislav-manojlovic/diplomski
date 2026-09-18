@@ -1,0 +1,219 @@
+Machine: machine1
+CPU: 0
+
+================ ikj ================
+----- RUN 1 -----
+N: 3072
+order: ikj
+time: 18.332
+GFLOP/s: 3.16288
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       36686388839      cycles:u                                                                (83,33%)
+       87289416254      instructions:u                   #    2,38  insn per cycle              (83,34%)
+       12724985208      cache-references:u                                                      (83,33%)
+         123715095      cache-misses:u                   #    0,97% of all cache refs           (83,33%)
+       14546987722      branches:u                                                              (83,33%)
+           9558830      branch-misses:u                  #    0,07% of all branches             (83,33%)
+
+      18,886220310 seconds time elapsed
+
+      18,544113000 seconds user
+       0,329913000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: ikj
+time: 18.2895
+GFLOP/s: 3.17024
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       36561418975      cycles:u                                                                (83,33%)
+       87284749720      instructions:u                   #    2,39  insn per cycle              (83,33%)
+       12723629362      cache-references:u                                                      (83,33%)
+         120613683      cache-misses:u                   #    0,95% of all cache refs           (83,33%)
+       14546554040      branches:u                                                              (83,34%)
+           9559506      branch-misses:u                  #    0,07% of all branches             (83,33%)
+
+      18,804168902 seconds time elapsed
+
+      18,482147000 seconds user
+       0,318933000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: ikj
+time: 18.2922
+GFLOP/s: 3.16977
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       36544484819      cycles:u                                                                (83,33%)
+       87293802185      instructions:u                   #    2,39  insn per cycle              (83,33%)
+       12723515671      cache-references:u                                                      (83,34%)
+         121185075      cache-misses:u                   #    0,95% of all cache refs           (83,34%)
+       14548416453      branches:u                                                              (83,33%)
+           9562998      branch-misses:u                  #    0,07% of all branches             (83,33%)
+
+      18,801911955 seconds time elapsed
+
+      18,487416000 seconds user
+       0,310939000 seconds sys
+
+
+
+================ blocked ================
+----- RUN 1 -----
+N: 3072
+order: blocked
+block size: 64
+time: 17.3747
+GFLOP/s: 3.33716
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       35563722528      cycles:u                                                                (83,33%)
+       95976428003      instructions:u                   #    2,70  insn per cycle              (83,33%)
+       11760870933      cache-references:u                                                      (83,33%)
+        1379106051      cache-misses:u                   #   11,73% of all cache refs           (83,33%)
+       16324671443      branches:u                                                              (83,33%)
+          17761867      branch-misses:u                  #    0,11% of all branches             (83,34%)
+
+      17,875752891 seconds time elapsed
+
+      17,562655000 seconds user
+       0,309958000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: blocked
+block size: 64
+time: 17.4118
+GFLOP/s: 3.33004
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       35644725690      cycles:u                                                                (83,33%)
+       95953076983      instructions:u                   #    2,69  insn per cycle              (83,33%)
+       11809114802      cache-references:u                                                      (83,33%)
+        1379027499      cache-misses:u                   #   11,68% of all cache refs           (83,34%)
+       16326025726      branches:u                                                              (83,33%)
+          17875220      branch-misses:u                  #    0,11% of all branches             (83,33%)
+
+      17,920834260 seconds time elapsed
+
+      17,604872000 seconds user
+       0,312944000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: blocked
+block size: 64
+time: 17.2979
+GFLOP/s: 3.35198
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       35434840461      cycles:u                                                                (83,33%)
+       95937102614      instructions:u                   #    2,71  insn per cycle              (83,33%)
+       11800425418      cache-references:u                                                      (83,34%)
+        1387808891      cache-misses:u                   #   11,76% of all cache refs           (83,33%)
+       16329230141      branches:u                                                              (83,34%)
+          17476323      branch-misses:u                  #    0,11% of all branches             (83,33%)
+
+      17,810772057 seconds time elapsed
+
+      17,497414000 seconds user
+       0,309954000 seconds sys
+
+
+
+================ recursive ================
+----- RUN 1 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 13.189
+GFLOP/s: 4.39624
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       27119277202      cycles:u                                                                (83,33%)
+       97018733853      instructions:u                   #    3,58  insn per cycle              (83,33%)
+       11548319718      cache-references:u                                                      (83,33%)
+         762130879      cache-misses:u                   #    6,60% of all cache refs           (83,33%)
+       16940057647      branches:u                                                              (83,34%)
+          13047191      branch-misses:u                  #    0,08% of all branches             (83,34%)
+
+      13,709960163 seconds time elapsed
+
+      13,396267000 seconds user
+       0,310959000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 13.1603
+GFLOP/s: 4.40583
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       27062587909      cycles:u                                                                (83,33%)
+       97025780885      instructions:u                   #    3,59  insn per cycle              (83,33%)
+       11430548947      cache-references:u                                                      (83,33%)
+         638817072      cache-misses:u                   #    5,59% of all cache refs           (83,34%)
+       16939378769      branches:u                                                              (83,33%)
+          13043529      branch-misses:u                  #    0,08% of all branches             (83,34%)
+
+      13,675089476 seconds time elapsed
+
+      13,363607000 seconds user
+       0,308944000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 13.1511
+GFLOP/s: 4.40892
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       27040903577      cycles:u                                                                (83,33%)
+       97001464116      instructions:u                   #    3,59  insn per cycle              (83,33%)
+       11427719106      cache-references:u                                                      (83,33%)
+         643295456      cache-misses:u                   #    5,63% of all cache refs           (83,33%)
+       16939580755      branches:u                                                              (83,34%)
+          13051406      branch-misses:u                  #    0,08% of all branches             (83,33%)
+
+      13,668780334 seconds time elapsed
+
+      13,358487000 seconds user
+       0,307942000 seconds sys
+
+
+

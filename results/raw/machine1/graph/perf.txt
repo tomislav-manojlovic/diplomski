@@ -1,0 +1,167 @@
+Machine: machine1
+CPU: 0
+
+================ csr ================
+----- RUN 1 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.89643 s
+time/run: 0.179286 s
+ns/edge: 21.3797
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+        2478789364      cycles:u                                                                (83,31%)
+        1783174045      instructions:u                   #    0,72  insn per cycle              (83,32%)
+         125153957      cache-references:u                                                      (83,31%)
+          56972275      cache-misses:u                   #   45,52% of all cache refs           (83,32%)
+         296891490      branches:u                                                              (83,34%)
+           5457376      branch-misses:u                  #    1,84% of all branches             (83,39%)
+
+       1,347131600 seconds time elapsed
+
+       1,233128000 seconds user
+       0,114011000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.98318 s
+time/run: 0.196636 s
+ns/edge: 23.4487
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+        2693768020      cycles:u                                                                (83,33%)
+        1776176408      instructions:u                   #    0,66  insn per cycle              (83,34%)
+         125412116      cache-references:u                                                      (83,33%)
+          56329478      cache-misses:u                   #   44,92% of all cache refs           (83,32%)
+         297307803      branches:u                                                              (83,34%)
+           5439841      branch-misses:u                  #    1,83% of all branches             (83,34%)
+
+       1,449907934 seconds time elapsed
+
+       1,317861000 seconds user
+       0,131886000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.915687 s
+time/run: 0.183137 s
+ns/edge: 21.839
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+        2497007313      cycles:u                                                                (83,30%)
+        1786064767      instructions:u                   #    0,72  insn per cycle              (83,30%)
+         124692474      cache-references:u                                                      (83,32%)
+          56634472      cache-misses:u                   #   45,42% of all cache refs           (83,33%)
+         294953839      branches:u                                                              (83,38%)
+           5442711      branch-misses:u                  #    1,85% of all branches             (83,36%)
+
+       1,358787627 seconds time elapsed
+
+       1,235683000 seconds user
+       0,122968000 seconds sys
+
+
+
+================ csr_reordered ================
+----- RUN 1 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.23354 s
+time/run: 0.0467079 s
+ns/edge: 5.56989
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+        1757360069      cycles:u                                                                (83,29%)
+        2020867812      instructions:u                   #    1,15  insn per cycle              (83,28%)
+         117496209      cache-references:u                                                      (83,36%)
+          47040319      cache-misses:u                   #   40,04% of all cache refs           (83,38%)
+         338698497      branches:u                                                              (83,38%)
+           8383231      branch-misses:u                  #    2,48% of all branches             (83,31%)
+
+       0,989303963 seconds time elapsed
+
+       0,872224000 seconds user
+       0,117030000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.196717 s
+time/run: 0.0393435 s
+ns/edge: 4.69168
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+        1600984359      cycles:u                                                                (83,33%)
+        2019301181      instructions:u                   #    1,26  insn per cycle              (83,32%)
+         115856576      cache-references:u                                                      (83,32%)
+          47148081      cache-misses:u                   #   40,70% of all cache refs           (83,31%)
+         337005631      branches:u                                                              (83,33%)
+           6393803      branch-misses:u                  #    1,90% of all branches             (83,39%)
+
+       0,925537874 seconds time elapsed
+
+       0,797424000 seconds user
+       0,128068000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.219528 s
+time/run: 0.0439057 s
+ns/edge: 5.23572
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+        1663928316      cycles:u                                                                (83,33%)
+        2022135665      instructions:u                   #    1,22  insn per cycle              (83,34%)
+         116721715      cache-references:u                                                      (83,33%)
+          46945891      cache-misses:u                   #   40,22% of all cache refs           (83,33%)
+         338424876      branches:u                                                              (83,33%)
+           6409925      branch-misses:u                  #    1,89% of all branches             (83,34%)
+
+       0,944336587 seconds time elapsed
+
+       0,820265000 seconds user
+       0,123888000 seconds sys
+
+
+

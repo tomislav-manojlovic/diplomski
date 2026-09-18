@@ -1,0 +1,249 @@
+Machine: machine1
+CPU: 0
+
+================ chaining / miss ================
+----- RUN 1 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.377612 s
+ns/query: 75.5224
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+        1575457727      cycles:u                                                                (83,32%)
+         719946052      instructions:u                   #    0,46  insn per cycle              (83,33%)
+          41176899      cache-references:u                                                      (83,33%)
+          18111594      cache-misses:u                   #   43,98% of all cache refs           (83,32%)
+         121291411      branches:u                                                              (83,32%)
+           4863210      branch-misses:u                  #    4,01% of all branches             (83,38%)
+
+       0,865585503 seconds time elapsed
+
+       0,775604000 seconds user
+       0,089954000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.378962 s
+ns/query: 75.7925
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+        1565651131      cycles:u                                                                (83,26%)
+         722772541      instructions:u                   #    0,46  insn per cycle              (83,34%)
+          40913543      cache-references:u                                                      (83,36%)
+          18211612      cache-misses:u                   #   44,51% of all cache refs           (83,36%)
+         120888772      branches:u                                                              (83,34%)
+           4871771      branch-misses:u                  #    4,03% of all branches             (83,33%)
+
+       0,860619220 seconds time elapsed
+
+       0,775466000 seconds user
+       0,085051000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.377389 s
+ns/query: 75.4778
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+        1591656685      cycles:u                                                                (83,27%)
+         721613663      instructions:u                   #    0,45  insn per cycle              (83,27%)
+          40146379      cache-references:u                                                      (83,33%)
+          18235381      cache-misses:u                   #   45,42% of all cache refs           (83,38%)
+         120917163      branches:u                                                              (83,37%)
+           4869699      branch-misses:u                  #    4,03% of all branches             (83,38%)
+
+       0,880464506 seconds time elapsed
+
+       0,791302000 seconds user
+       0,089034000 seconds sys
+
+
+
+================ linear / miss ================
+----- RUN 1 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 2.34635 s
+ns/query: 469.27
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        5200137561      cycles:u                                                                (83,31%)
+        9551682614      instructions:u                   #    1,84  insn per cycle              (83,32%)
+         367467126      cache-references:u                                                      (83,33%)
+          44943141      cache-misses:u                   #   12,23% of all cache refs           (83,34%)
+        2090994003      branches:u                                                              (83,35%)
+           5994900      branch-misses:u                  #    0,29% of all branches             (83,35%)
+
+       2,633253981 seconds time elapsed
+
+       2,580869000 seconds user
+       0,051997000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 2.3429 s
+ns/query: 468.579
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        5191402744      cycles:u                                                                (83,33%)
+        9548956840      instructions:u                   #    1,84  insn per cycle              (83,33%)
+         367334107      cache-references:u                                                      (83,34%)
+          44944334      cache-misses:u                   #   12,24% of all cache refs           (83,33%)
+        2091390515      branches:u                                                              (83,32%)
+           5996943      branch-misses:u                  #    0,29% of all branches             (83,36%)
+
+       2,629942856 seconds time elapsed
+
+       2,571487000 seconds user
+       0,057988000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 2.34067 s
+ns/query: 468.134
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        5185581384      cycles:u                                                                (83,31%)
+        9551798675      instructions:u                   #    1,84  insn per cycle              (83,31%)
+         367511626      cache-references:u                                                      (83,35%)
+          45079030      cache-misses:u                   #   12,27% of all cache refs           (83,34%)
+        2091015347      branches:u                                                              (83,35%)
+           5994124      branch-misses:u                  #    0,29% of all branches             (83,34%)
+
+       2,632656319 seconds time elapsed
+
+       2,577303000 seconds user
+       0,054985000 seconds sys
+
+
+
+================ robin_hood / miss ================
+----- RUN 1 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.777528 s
+ns/query: 155.506
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+        2171091463      cycles:u                                                                (83,31%)
+        1240826827      instructions:u                   #    0,57  insn per cycle              (83,35%)
+         136360382      cache-references:u                                                      (83,35%)
+          45983178      cache-misses:u                   #   33,72% of all cache refs           (83,34%)
+         276279639      branches:u                                                              (83,36%)
+           9540365      branch-misses:u                  #    3,45% of all branches             (83,28%)
+
+       1,149418656 seconds time elapsed
+
+       1,079413000 seconds user
+       0,069961000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.776194 s
+ns/query: 155.239
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+        2167569196      cycles:u                                                                (83,31%)
+        1238808158      instructions:u                   #    0,57  insn per cycle              (83,31%)
+         136830557      cache-references:u                                                      (83,31%)
+          46104253      cache-misses:u                   #   33,69% of all cache refs           (83,31%)
+         276502667      branches:u                                                              (83,40%)
+           9522426      branch-misses:u                  #    3,44% of all branches             (83,36%)
+
+       1,139772023 seconds time elapsed
+
+       1,078631000 seconds user
+       0,060979000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.779245 s
+ns/query: 155.849
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+        2173275312      cycles:u                                                                (83,27%)
+        1242315992      instructions:u                   #    0,57  insn per cycle              (83,32%)
+         136344728      cache-references:u                                                      (83,37%)
+          45924150      cache-misses:u                   #   33,68% of all cache refs           (83,37%)
+         276553793      branches:u                                                              (83,36%)
+           9541805      branch-misses:u                  #    3,45% of all branches             (83,31%)
+
+       1,144651348 seconds time elapsed
+
+       1,088233000 seconds user
+       0,055960000 seconds sys
+
+
+

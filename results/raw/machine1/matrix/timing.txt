@@ -1,0 +1,183 @@
+Machine: machine1
+CPU: 0
+
+================ N=1024 ================
+----- ikj -----
+N: 1024
+order: ikj
+time: 0.626095
+GFLOP/s: 3.42997
+checksum: 245.803
+N: 1024
+order: ikj
+time: 0.624338
+GFLOP/s: 3.43962
+checksum: 245.803
+N: 1024
+order: ikj
+time: 0.621084
+GFLOP/s: 3.45764
+checksum: 245.803
+N: 1024
+order: ikj
+time: 0.622707
+GFLOP/s: 3.44863
+checksum: 245.803
+N: 1024
+order: ikj
+time: 0.633521
+GFLOP/s: 3.38976
+checksum: 245.803
+----- blocked 64 -----
+N: 1024
+order: blocked
+block size: 64
+time: 0.637578
+GFLOP/s: 3.36819
+checksum: 245.803
+N: 1024
+order: blocked
+block size: 64
+time: 0.636392
+GFLOP/s: 3.37447
+checksum: 245.803
+N: 1024
+order: blocked
+block size: 64
+time: 0.639654
+GFLOP/s: 3.35726
+checksum: 245.803
+N: 1024
+order: blocked
+block size: 64
+time: 0.635626
+GFLOP/s: 3.37853
+checksum: 245.803
+N: 1024
+order: blocked
+block size: 64
+time: 0.635708
+GFLOP/s: 3.3781
+checksum: 245.803
+----- recursive 64 -----
+N: 1024
+order: recursive
+cutoff: 64
+time: 0.475919
+GFLOP/s: 4.51229
+checksum: 245.803
+N: 1024
+order: recursive
+cutoff: 64
+time: 0.474479
+GFLOP/s: 4.52598
+checksum: 245.803
+N: 1024
+order: recursive
+cutoff: 64
+time: 0.474382
+GFLOP/s: 4.52691
+checksum: 245.803
+N: 1024
+order: recursive
+cutoff: 64
+time: 0.473638
+GFLOP/s: 4.53401
+checksum: 245.803
+N: 1024
+order: recursive
+cutoff: 64
+time: 0.475427
+GFLOP/s: 4.51695
+checksum: 245.803
+
+================ N=3072 ================
+----- ikj -----
+N: 3072
+order: ikj
+time: 17.7345
+GFLOP/s: 3.26945
+checksum: 722.955
+N: 3072
+order: ikj
+time: 17.714
+GFLOP/s: 3.27323
+checksum: 722.955
+N: 3072
+order: ikj
+time: 17.7298
+GFLOP/s: 3.27032
+checksum: 722.955
+N: 3072
+order: ikj
+time: 17.7814
+GFLOP/s: 3.26083
+checksum: 722.955
+N: 3072
+order: ikj
+time: 17.7886
+GFLOP/s: 3.25952
+checksum: 722.955
+----- blocked 64 -----
+N: 3072
+order: blocked
+block size: 64
+time: 17.0162
+GFLOP/s: 3.40746
+checksum: 722.955
+N: 3072
+order: blocked
+block size: 64
+time: 17.0042
+GFLOP/s: 3.40987
+checksum: 722.955
+N: 3072
+order: blocked
+block size: 64
+time: 17.0942
+GFLOP/s: 3.39191
+checksum: 722.955
+N: 3072
+order: blocked
+block size: 64
+time: 17.1395
+GFLOP/s: 3.38296
+checksum: 722.955
+N: 3072
+order: blocked
+block size: 64
+time: 17.0132
+GFLOP/s: 3.40807
+checksum: 722.955
+----- recursive 64 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 12.9331
+GFLOP/s: 4.48322
+checksum: 722.955
+N: 3072
+order: recursive
+cutoff: 64
+time: 12.9269
+GFLOP/s: 4.48538
+checksum: 722.955
+N: 3072
+order: recursive
+cutoff: 64
+time: 12.9397
+GFLOP/s: 4.48096
+checksum: 722.955
+N: 3072
+order: recursive
+cutoff: 64
+time: 12.9672
+GFLOP/s: 4.47145
+checksum: 722.955
+N: 3072
+order: recursive
+cutoff: 64
+time: 12.9667
+GFLOP/s: 4.47161
+checksum: 722.955
+

@@ -1,0 +1,131 @@
+Machine: machine1
+CPU: 0
+
+================ binary ================
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.59196 s
+ns/query: 318.392
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.58372 s
+ns/query: 316.745
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.57691 s
+ns/query: 315.382
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.59482 s
+ns/query: 318.964
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.60385 s
+ns/query: 320.771
+found: 2500570
+
+================ bst ================
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.98867 s
+ns/query: 397.734
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.87299 s
+ns/query: 374.598
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.99413 s
+ns/query: 398.826
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.8817 s
+ns/query: 376.34
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 1.98086 s
+ns/query: 396.172
+found: 2500570
+
+================ eytzinger ================
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.789309 s
+ns/query: 157.862
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.769555 s
+ns/query: 153.911
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.775609 s
+ns/query: 155.122
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.770748 s
+ns/query: 154.15
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.773665 s
+ns/query: 154.733
+found: 2500570
+
+================ eytzinger_prefetch ================
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.624086 s
+ns/query: 124.817
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.638016 s
+ns/query: 127.603
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.621773 s
+ns/query: 124.355
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.614026 s
+ns/query: 122.805
+found: 2500570
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.616324 s
+ns/query: 123.265
+found: 2500570
+
