@@ -1,0 +1,367 @@
+Machine: machine2
+CPU: 0
+
+================ binary ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.917651 s
+ns/query: 183.53
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        1046146633      cpu_atom/cycles/                                                        (0,12%)
+        3575157204      cpu_core/cycles/                                                        (99,88%)
+         809456434      cpu_atom/instructions/           #    0,77  insn per cycle              (0,12%)
+        1475027227      cpu_core/instructions/           #    0,41  insn per cycle              (99,88%)
+          17698914      cpu_atom/cache-references/                                              (0,12%)
+         497380611      cpu_core/cache-references/                                              (99,88%)
+          10561253      cpu_atom/cache-misses/           #   59,67% of all cache refs           (0,12%)
+           1283457      cpu_core/cache-misses/           #    0,26% of all cache refs           (99,88%)
+         147540440      cpu_atom/branches/                                                      (0,12%)
+         343160725      cpu_core/branches/                                                      (99,88%)
+           6141164      cpu_atom/branch-misses/          #    4,16% of all branches             (0,12%)
+          52651997      cpu_core/branch-misses/          #   15,34% of all branches             (99,88%)
+
+       0,953415788 seconds time elapsed
+
+       0,935315000 seconds user
+       0,018006000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.918357 s
+ns/query: 183.671
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        2328984153      cpu_atom/cycles/                                                        (0,05%)
+        3578801809      cpu_core/cycles/                                                        (99,95%)
+        2097897567      cpu_atom/instructions/           #    0,90  insn per cycle              (0,05%)
+        1473893234      cpu_core/instructions/           #    0,41  insn per cycle              (99,95%)
+          38644880      cpu_atom/cache-references/                                              (0,05%)
+         500047231      cpu_core/cache-references/                                              (99,95%)
+          10447031      cpu_atom/cache-misses/           #   27,03% of all cache refs           (0,05%)
+           1301531      cpu_core/cache-misses/           #    0,26% of all cache refs           (99,95%)
+         381169234      cpu_atom/branches/                                                      (0,05%)
+         342900157      cpu_core/branches/                                                      (99,95%)
+          15898919      cpu_atom/branch-misses/          #    4,17% of all branches             (0,05%)
+          52616162      cpu_core/branch-misses/          #   15,34% of all branches             (99,95%)
+
+       0,945643178 seconds time elapsed
+
+       0,935549000 seconds user
+       0,010005000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.922274 s
+ns/query: 184.455
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark binary 1048576 5000000':
+
+        2317917804      cpu_atom/cycles/                                                        (0,05%)
+        3592691260      cpu_core/cycles/                                                        (99,95%)
+        1981943566      cpu_atom/instructions/           #    0,86  insn per cycle              (0,05%)
+        1474087064      cpu_core/instructions/           #    0,41  insn per cycle              (99,95%)
+          41777838      cpu_atom/cache-references/                                              (0,05%)
+         495391342      cpu_core/cache-references/                                              (99,95%)
+           9522729      cpu_atom/cache-misses/           #   22,79% of all cache refs           (0,05%)
+           1355817      cpu_core/cache-misses/           #    0,27% of all cache refs           (99,95%)
+         361197512      cpu_atom/branches/                                                      (0,05%)
+         342933679      cpu_core/branches/                                                      (99,95%)
+          14953275      cpu_atom/branch-misses/          #    4,14% of all branches             (0,05%)
+          52609142      cpu_core/branch-misses/          #   15,34% of all branches             (99,95%)
+
+       0,948467715 seconds time elapsed
+
+       0,938322000 seconds user
+       0,010003000 seconds sys
+
+
+
+================ bst ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.678834 s
+ns/query: 135.767
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        1831877262      cpu_atom/cycles/                                                        (0,06%)
+        2472627977      cpu_core/cycles/                                                        (99,94%)
+        1654295269      cpu_atom/instructions/           #    0,90  insn per cycle              (0,06%)
+        1570269267      cpu_core/instructions/           #    0,64  insn per cycle              (99,94%)
+          30340080      cpu_atom/cache-references/                                              (0,06%)
+         258105304      cpu_core/cache-references/                                              (99,94%)
+           7304823      cpu_atom/cache-misses/           #   24,08% of all cache refs           (0,06%)
+          53290158      cpu_core/cache-misses/           #   20,65% of all cache refs           (99,94%)
+         301561862      cpu_atom/branches/                                                      (0,06%)
+         347157008      cpu_core/branches/                                                      (99,94%)
+          12192235      cpu_atom/branch-misses/          #    4,04% of all branches             (0,06%)
+           2722363      cpu_core/branch-misses/          #    0,78% of all branches             (99,94%)
+
+       0,744735702 seconds time elapsed
+
+       0,726655000 seconds user
+       0,017991000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.679228 s
+ns/query: 135.846
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        1818190032      cpu_atom/cycles/                                                        (0,06%)
+        2472900962      cpu_core/cycles/                                                        (99,94%)
+        1716704938      cpu_atom/instructions/           #    0,94  insn per cycle              (0,06%)
+        1569983528      cpu_core/instructions/           #    0,63  insn per cycle              (99,94%)
+          28784164      cpu_atom/cache-references/                                              (0,06%)
+         256329410      cpu_core/cache-references/                                              (99,94%)
+           7100048      cpu_atom/cache-misses/           #   24,67% of all cache refs           (0,06%)
+          53381513      cpu_core/cache-misses/           #   20,83% of all cache refs           (99,94%)
+         312088433      cpu_atom/branches/                                                      (0,06%)
+         347111941      cpu_core/branches/                                                      (99,94%)
+          12782486      cpu_atom/branch-misses/          #    4,10% of all branches             (0,06%)
+           2727758      cpu_core/branch-misses/          #    0,79% of all branches             (99,94%)
+
+       0,745651131 seconds time elapsed
+
+       0,731492000 seconds user
+       0,014009000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.678606 s
+ns/query: 135.721
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark bst 1048576 5000000':
+
+        1859582606      cpu_atom/cycles/                                                        (0,06%)
+        2475025610      cpu_core/cycles/                                                        (99,94%)
+        1756487178      cpu_atom/instructions/           #    0,94  insn per cycle              (0,06%)
+        1569996650      cpu_core/instructions/           #    0,63  insn per cycle              (99,94%)
+          31739663      cpu_atom/cache-references/                                              (0,06%)
+         255942258      cpu_core/cache-references/                                              (99,94%)
+           8546771      cpu_atom/cache-misses/           #   26,93% of all cache refs           (0,06%)
+          52944401      cpu_core/cache-misses/           #   20,69% of all cache refs           (99,94%)
+         319182453      cpu_atom/branches/                                                      (0,06%)
+         347114980      cpu_core/branches/                                                      (99,94%)
+          12959809      cpu_atom/branch-misses/          #    4,06% of all branches             (0,06%)
+           2723181      cpu_core/branch-misses/          #    0,78% of all branches             (99,94%)
+
+       0,744689717 seconds time elapsed
+
+       0,723640000 seconds user
+       0,020989000 seconds sys
+
+
+
+================ eytzinger ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.302545 s
+ns/query: 60.509
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+         877120903      cpu_atom/cycles/                                                        (0,12%)
+        1255993505      cpu_core/cycles/                                                        (99,88%)
+         819090806      cpu_atom/instructions/           #    0,93  insn per cycle              (0,12%)
+        1214602643      cpu_core/instructions/           #    0,97  insn per cycle              (99,88%)
+          14247330      cpu_atom/cache-references/                                              (0,12%)
+          25903988      cpu_core/cache-references/                                              (99,88%)
+           3636173      cpu_atom/cache-misses/           #   25,52% of all cache refs           (0,12%)
+            990591      cpu_core/cache-misses/           #    3,82% of all cache refs           (99,88%)
+         149239155      cpu_atom/branches/                                                      (0,12%)
+         262641260      cpu_core/branches/                                                      (99,88%)
+           6130273      cpu_atom/branch-misses/          #    4,11% of all branches             (0,12%)
+           2623925      cpu_core/branch-misses/          #    1,00% of all branches             (99,88%)
+
+       0,332675815 seconds time elapsed
+
+       0,319633000 seconds user
+       0,012985000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.302277 s
+ns/query: 60.4554
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+         901355983      cpu_atom/cycles/                                                        (0,13%)
+        1257157168      cpu_core/cycles/                                                        (99,87%)
+         793915110      cpu_atom/instructions/           #    0,88  insn per cycle              (0,13%)
+        1214633383      cpu_core/instructions/           #    0,97  insn per cycle              (99,87%)
+          14551848      cpu_atom/cache-references/                                              (0,13%)
+          26509161      cpu_core/cache-references/                                              (99,87%)
+           3115276      cpu_atom/cache-misses/           #   21,41% of all cache refs           (0,13%)
+            976704      cpu_core/cache-misses/           #    3,68% of all cache refs           (99,87%)
+         144833628      cpu_atom/branches/                                                      (0,13%)
+         262650714      cpu_core/branches/                                                      (99,87%)
+           6144847      cpu_atom/branch-misses/          #    4,24% of all branches             (0,13%)
+           2625730      cpu_core/branch-misses/          #    1,00% of all branches             (99,87%)
+
+       0,332487381 seconds time elapsed
+
+       0,321469000 seconds user
+       0,010981000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.302166 s
+ns/query: 60.4332
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger 1048576 5000000':
+
+         851296497      cpu_atom/cycles/                                                        (0,16%)
+        1254705992      cpu_core/cycles/                                                        (99,84%)
+         631269190      cpu_atom/instructions/           #    0,74  insn per cycle              (0,16%)
+        1215498962      cpu_core/instructions/           #    0,97  insn per cycle              (99,84%)
+          10518723      cpu_atom/cache-references/                                              (0,16%)
+          26220154      cpu_core/cache-references/                                              (99,84%)
+           3354353      cpu_atom/cache-misses/           #   31,89% of all cache refs           (0,16%)
+           1061856      cpu_core/cache-misses/           #    4,05% of all cache refs           (99,84%)
+         114987122      cpu_atom/branches/                                                      (0,16%)
+         262791407      cpu_core/branches/                                                      (99,84%)
+           4704299      cpu_atom/branch-misses/          #    4,09% of all branches             (0,16%)
+           2623468      cpu_core/branch-misses/          #    1,00% of all branches             (99,84%)
+
+       0,332611220 seconds time elapsed
+
+       0,321579000 seconds user
+       0,010985000 seconds sys
+
+
+
+================ eytzinger_prefetch ================
+----- RUN 1 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.277128 s
+ns/query: 55.4256
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+         814405040      cpu_atom/cycles/                                                        (0,14%)
+        1160847145      cpu_core/cycles/                                                        (99,86%)
+         724201351      cpu_atom/instructions/           #    0,89  insn per cycle              (0,14%)
+        1882227416      cpu_core/instructions/           #    1,62  insn per cycle              (99,86%)
+          13635191      cpu_atom/cache-references/                                              (0,14%)
+          26274710      cpu_core/cache-references/                                              (99,86%)
+           3237389      cpu_atom/cache-misses/           #   23,74% of all cache refs           (0,14%)
+           1030160      cpu_core/cache-misses/           #    3,92% of all cache refs           (99,86%)
+         131616315      cpu_atom/branches/                                                      (0,14%)
+         362743180      cpu_core/branches/                                                      (99,86%)
+           5522352      cpu_atom/branch-misses/          #    4,20% of all branches             (0,14%)
+           2638289      cpu_core/branch-misses/          #    0,73% of all branches             (99,86%)
+
+       0,307131015 seconds time elapsed
+
+       0,299006000 seconds user
+       0,008000000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.278065 s
+ns/query: 55.6129
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+         779389920      cpu_atom/cycles/                                                        (0,14%)
+        1163029511      cpu_core/cycles/                                                        (99,86%)
+         728312190      cpu_atom/instructions/           #    0,93  insn per cycle              (0,14%)
+        1882174629      cpu_core/instructions/           #    1,62  insn per cycle              (99,86%)
+          12853620      cpu_atom/cache-references/                                              (0,14%)
+          26647493      cpu_core/cache-references/                                              (99,86%)
+           3463231      cpu_atom/cache-misses/           #   26,94% of all cache refs           (0,14%)
+            971315      cpu_core/cache-misses/           #    3,65% of all cache refs           (99,86%)
+         132433347      cpu_atom/branches/                                                      (0,14%)
+         362733190      cpu_core/branches/                                                      (99,86%)
+           5311359      cpu_atom/branch-misses/          #    4,01% of all branches             (0,14%)
+           2638921      cpu_core/branch-misses/          #    0,73% of all branches             (99,86%)
+
+       0,307633477 seconds time elapsed
+
+       0,297570000 seconds user
+       0,010019000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 1048576
+size: 4096 KiB
+queries: 5000000
+time: 0.276901 s
+ns/query: 55.3803
+found: 2500570
+
+ Performance counter stats for 'taskset -c 0 ./build/search_benchmark eytzinger_prefetch 1048576 5000000':
+
+         812201760      cpu_atom/cycles/                                                        (0,15%)
+        1163007185      cpu_core/cycles/                                                        (99,85%)
+         690187637      cpu_atom/instructions/           #    0,85  insn per cycle              (0,15%)
+        1882714045      cpu_core/instructions/           #    1,62  insn per cycle              (99,85%)
+          12373201      cpu_atom/cache-references/                                              (0,15%)
+          26177490      cpu_core/cache-references/                                              (99,85%)
+           3349814      cpu_atom/cache-misses/           #   27,07% of all cache refs           (0,15%)
+           1074406      cpu_core/cache-misses/           #    4,10% of all cache refs           (99,85%)
+         125788251      cpu_atom/branches/                                                      (0,15%)
+         362804639      cpu_core/branches/                                                      (99,85%)
+           5135098      cpu_atom/branch-misses/          #    4,08% of all branches             (0,15%)
+           2643086      cpu_core/branch-misses/          #    0,73% of all branches             (99,85%)
+
+       0,307644111 seconds time elapsed
+
+       0,295632000 seconds user
+       0,011985000 seconds sys
+
+
+

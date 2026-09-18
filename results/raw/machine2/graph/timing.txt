@@ -1,0 +1,144 @@
+Machine: machine2
+CPU: 0
+
+================ adj ================
+implementation: adj
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.462545 s
+time/run: 0.0925091 s
+ns/edge: 11.0316
+implementation: adj
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.463674 s
+time/run: 0.0927348 s
+ns/edge: 11.0586
+implementation: adj
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.466033 s
+time/run: 0.0932065 s
+ns/edge: 11.1148
+implementation: adj
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.466432 s
+time/run: 0.0932864 s
+ns/edge: 11.1243
+implementation: adj
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.471243 s
+time/run: 0.0942485 s
+ns/edge: 11.2391
+
+================ csr ================
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.342726 s
+time/run: 0.0685451 s
+ns/edge: 8.17396
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.330719 s
+time/run: 0.0661438 s
+ns/edge: 7.8876
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.32759 s
+time/run: 0.065518 s
+ns/edge: 7.81299
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.32571 s
+time/run: 0.065142 s
+ns/edge: 7.76814
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.332484 s
+time/run: 0.0664968 s
+ns/edge: 7.9297
+
+================ csr_reordered ================
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0890587 s
+time/run: 0.0178117 s
+ns/edge: 2.12404
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0894381 s
+time/run: 0.0178876 s
+ns/edge: 2.13309
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0895557 s
+time/run: 0.0179111 s
+ns/edge: 2.13589
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0888401 s
+time/run: 0.017768 s
+ns/edge: 2.11883
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0888862 s
+time/run: 0.0177772 s
+ns/edge: 2.11993
+

@@ -1,0 +1,273 @@
+Machine: machine2
+CPU: 0
+
+================ ikj ================
+----- RUN 1 -----
+N: 3072
+order: ikj
+time: 12.0439
+GFLOP/s: 4.81421
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       12373211859      cpu_atom/cycles/                                                        (0,01%)
+       39028416445      cpu_core/cycles/                                                        (99,99%)
+        9842626229      cpu_atom/instructions/           #    0,80  insn per cycle              (0,01%)
+       44324351761      cpu_core/instructions/           #    1,14  insn per cycle              (99,99%)
+         199182781      cpu_atom/cache-references/                                              (0,01%)
+        3725304819      cpu_core/cache-references/                                              (99,99%)
+          93886165      cpu_atom/cache-misses/           #   47,14% of all cache refs           (0,01%)
+        3073139586      cpu_core/cache-misses/           #   82,49% of all cache refs           (99,99%)
+        1786905819      cpu_atom/branches/                                                      (0,01%)
+        7393406359      cpu_core/branches/                                                      (99,99%)
+          74095101      cpu_atom/branch-misses/          #    4,15% of all branches             (0,01%)
+           9548390      cpu_core/branch-misses/          #    0,13% of all branches             (99,99%)
+
+      12,255538425 seconds time elapsed
+
+      12,151013000 seconds user
+       0,104000000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: ikj
+time: 11.9518
+GFLOP/s: 4.85131
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       32106940887      cpu_atom/cycles/                                                        (0,00%)
+       38608639817      cpu_core/cycles/                                                        (100,00%)
+       30220272637      cpu_atom/instructions/           #    0,94  insn per cycle              (0,00%)
+       44321903395      cpu_core/instructions/           #    1,15  insn per cycle              (100,00%)
+         531713671      cpu_atom/cache-references/                                              (0,00%)
+        3727319323      cpu_core/cache-references/                                              (100,00%)
+         101590528      cpu_atom/cache-misses/           #   19,11% of all cache refs           (0,00%)
+        3067198027      cpu_core/cache-misses/           #   82,29% of all cache refs           (100,00%)
+        5511740768      cpu_atom/branches/                                                      (0,00%)
+        7392976841      cpu_core/branches/                                                      (100,00%)
+         222971812      cpu_atom/branch-misses/          #    4,05% of all branches             (0,00%)
+           9546266      cpu_core/branch-misses/          #    0,13% of all branches             (100,00%)
+
+      12,145162408 seconds time elapsed
+
+      12,050837000 seconds user
+       0,093990000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: ikj
+time: 12.0624
+GFLOP/s: 4.80683
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 ikj':
+
+       28845502707      cpu_atom/cycles/                                                        (0,00%)
+       38908318218      cpu_core/cycles/                                                        (100,00%)
+       27220186315      cpu_atom/instructions/           #    0,94  insn per cycle              (0,00%)
+       44322274717      cpu_core/instructions/           #    1,14  insn per cycle              (100,00%)
+         509490720      cpu_atom/cache-references/                                              (0,00%)
+        3724958852      cpu_core/cache-references/                                              (100,00%)
+         118176388      cpu_atom/cache-misses/           #   23,20% of all cache refs           (0,00%)
+        3066511369      cpu_core/cache-misses/           #   82,32% of all cache refs           (100,00%)
+        4935441899      cpu_atom/branches/                                                      (0,00%)
+        7393033190      cpu_core/branches/                                                      (100,00%)
+         203100498      cpu_atom/branch-misses/          #    4,12% of all branches             (0,00%)
+           9542710      cpu_core/branch-misses/          #    0,13% of all branches             (100,00%)
+
+      12,272522769 seconds time elapsed
+
+      12,172823000 seconds user
+       0,098998000 seconds sys
+
+
+
+================ blocked ================
+----- RUN 1 -----
+N: 3072
+order: blocked
+block size: 64
+time: 6.73885
+GFLOP/s: 8.60414
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       17698325888      cpu_atom/cycles/                                                        (0,01%)
+       26320193666      cpu_core/cycles/                                                        (99,99%)
+       16616061631      cpu_atom/instructions/           #    0,94  insn per cycle              (0,01%)
+       54677650943      cpu_core/instructions/           #    2,08  insn per cycle              (99,99%)
+         280255986      cpu_atom/cache-references/                                              (0,01%)
+         185742854      cpu_core/cache-references/                                              (99,99%)
+          59161276      cpu_atom/cache-misses/           #   21,11% of all cache refs           (0,01%)
+          43836867      cpu_core/cache-misses/           #   23,60% of all cache refs           (99,99%)
+        3029951159      cpu_atom/branches/                                                      (0,01%)
+        9614349258      cpu_core/branches/                                                      (99,99%)
+         121329626      cpu_atom/branch-misses/          #    4,00% of all branches             (0,01%)
+           7280787      cpu_core/branch-misses/          #    0,08% of all branches             (99,99%)
+
+       6,943492251 seconds time elapsed
+
+       6,842274000 seconds user
+       0,100989000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: blocked
+block size: 64
+time: 6.72502
+GFLOP/s: 8.62184
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       18948015826      cpu_atom/cycles/                                                        (0,01%)
+       26234220466      cpu_core/cycles/                                                        (99,99%)
+       17950607980      cpu_atom/instructions/           #    0,95  insn per cycle              (0,01%)
+       54677351673      cpu_core/instructions/           #    2,08  insn per cycle              (99,99%)
+         311129767      cpu_atom/cache-references/                                              (0,01%)
+         181779730      cpu_core/cache-references/                                              (99,99%)
+          82388156      cpu_atom/cache-misses/           #   26,48% of all cache refs           (0,01%)
+          42893560      cpu_core/cache-misses/           #   23,60% of all cache refs           (99,99%)
+        3242387491      cpu_atom/branches/                                                      (0,01%)
+        9614275229      cpu_core/branches/                                                      (99,99%)
+         131249551      cpu_atom/branch-misses/          #    4,05% of all branches             (0,01%)
+           7284316      cpu_core/branch-misses/          #    0,08% of all branches             (99,99%)
+
+       6,919979567 seconds time elapsed
+
+       6,817611000 seconds user
+       0,102009000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: blocked
+block size: 64
+time: 6.73688
+GFLOP/s: 8.60666
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 blocked 64':
+
+       19060359218      cpu_atom/cycles/                                                        (0,01%)
+       26301568407      cpu_core/cycles/                                                        (99,99%)
+       17545469329      cpu_atom/instructions/           #    0,92  insn per cycle              (0,01%)
+       54677954706      cpu_core/instructions/           #    2,08  insn per cycle              (99,99%)
+         326099824      cpu_atom/cache-references/                                              (0,01%)
+         184127637      cpu_core/cache-references/                                              (99,99%)
+          54022349      cpu_atom/cache-misses/           #   16,57% of all cache refs           (0,01%)
+          44113468      cpu_core/cache-misses/           #   23,96% of all cache refs           (99,99%)
+        3188968443      cpu_atom/branches/                                                      (0,01%)
+        9614373123      cpu_core/branches/                                                      (99,99%)
+         132739126      cpu_atom/branch-misses/          #    4,16% of all branches             (0,01%)
+           7284872      cpu_core/branch-misses/          #    0,08% of all branches             (99,99%)
+
+       6,937904390 seconds time elapsed
+
+       6,839525000 seconds user
+       0,097993000 seconds sys
+
+
+
+================ recursive ================
+----- RUN 1 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 7.11148
+GFLOP/s: 8.15331
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       18101521772      cpu_atom/cycles/                                                        (0,01%)
+       27709622668      cpu_core/cycles/                                                        (99,99%)
+       15666145613      cpu_atom/instructions/           #    0,87  insn per cycle              (0,01%)
+       57631012258      cpu_core/instructions/           #    2,08  insn per cycle              (99,99%)
+         314697296      cpu_atom/cache-references/                                              (0,01%)
+         299844521      cpu_core/cache-references/                                              (99,99%)
+          56791971      cpu_atom/cache-misses/           #   18,05% of all cache refs           (0,01%)
+          40308307      cpu_core/cache-misses/           #   13,44% of all cache refs           (99,99%)
+        2855061603      cpu_atom/branches/                                                      (0,01%)
+       10376078929      cpu_core/branches/                                                      (99,99%)
+         119618287      cpu_atom/branch-misses/          #    4,19% of all branches             (0,01%)
+          12997662      cpu_core/branch-misses/          #    0,13% of all branches             (99,99%)
+
+       7,309494106 seconds time elapsed
+
+       7,213041000 seconds user
+       0,096000000 seconds sys
+
+
+
+----- RUN 2 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 7.11189
+GFLOP/s: 8.15283
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       18619979710      cpu_atom/cycles/                                                        (0,01%)
+       27746193961      cpu_core/cycles/                                                        (99,99%)
+       17446611285      cpu_atom/instructions/           #    0,94  insn per cycle              (0,01%)
+       57630103403      cpu_core/instructions/           #    2,08  insn per cycle              (99,99%)
+         299356192      cpu_atom/cache-references/                                              (0,01%)
+         301505977      cpu_core/cache-references/                                              (99,99%)
+          65953607      cpu_atom/cache-misses/           #   22,03% of all cache refs           (0,01%)
+          39711014      cpu_core/cache-misses/           #   13,17% of all cache refs           (99,99%)
+        3181583110      cpu_atom/branches/                                                      (0,01%)
+       10375961947      cpu_core/branches/                                                      (99,99%)
+         127109952      cpu_atom/branch-misses/          #    4,00% of all branches             (0,01%)
+          12990578      cpu_core/branch-misses/          #    0,13% of all branches             (99,99%)
+
+       7,318853856 seconds time elapsed
+
+       7,224598000 seconds user
+       0,093994000 seconds sys
+
+
+
+----- RUN 3 -----
+N: 3072
+order: recursive
+cutoff: 64
+time: 7.13861
+GFLOP/s: 8.12232
+checksum: 722.955
+
+ Performance counter stats for 'taskset -c 0 ./build/matrix_loop_order 3072 recursive 64':
+
+       19391466695      cpu_atom/cycles/                                                        (0,01%)
+       27804845263      cpu_core/cycles/                                                        (99,99%)
+       17660004014      cpu_atom/instructions/           #    0,91  insn per cycle              (0,01%)
+       57630502633      cpu_core/instructions/           #    2,07  insn per cycle              (99,99%)
+         315769928      cpu_atom/cache-references/                                              (0,01%)
+         310036606      cpu_core/cache-references/                                              (99,99%)
+          74810312      cpu_atom/cache-misses/           #   23,69% of all cache refs           (0,01%)
+          42669104      cpu_core/cache-misses/           #   13,76% of all cache refs           (99,99%)
+        3208975154      cpu_atom/branches/                                                      (0,01%)
+       10376008424      cpu_core/branches/                                                      (99,99%)
+         131771764      cpu_atom/branch-misses/          #    4,11% of all branches             (0,01%)
+          13054683      cpu_core/branch-misses/          #    0,13% of all branches             (99,99%)
+
+       7,334142017 seconds time elapsed
+
+       7,233798000 seconds user
+       0,099997000 seconds sys
+
+
+

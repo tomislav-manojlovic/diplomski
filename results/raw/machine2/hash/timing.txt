@@ -1,0 +1,429 @@
+Machine: machine2
+CPU: 0
+
+================ LF=0.70 / HIT ================
+----- chaining -----
+implementation: chaining
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.132058 s
+ns/query: 26.4117
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.129063 s
+ns/query: 25.8126
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.136744 s
+ns/query: 27.3489
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.12802 s
+ns/query: 25.604
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.133608 s
+ns/query: 26.7215
+found: 5000000
+
+----- linear -----
+implementation: linear
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.0782207 s
+ns/query: 15.6441
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.0773209 s
+ns/query: 15.4642
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.0756317 s
+ns/query: 15.1263
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.0759269 s
+ns/query: 15.1854
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.0766986 s
+ns/query: 15.3397
+found: 5000000
+
+----- robin_hood -----
+implementation: robin_hood
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.144605 s
+ns/query: 28.9209
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.140939 s
+ns/query: 28.1879
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.14417 s
+ns/query: 28.834
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.143161 s
+ns/query: 28.6321
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1497966
+load factor: 0.7
+queries: 5000000
+query type: hit
+time: 0.145193 s
+ns/query: 29.0385
+found: 5000000
+
+================ LF=0.95 / HIT ================
+----- chaining -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.15014 s
+ns/query: 30.0281
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.142423 s
+ns/query: 28.4845
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.150393 s
+ns/query: 30.0786
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.141148 s
+ns/query: 28.2295
+found: 5000000
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.149245 s
+ns/query: 29.8491
+found: 5000000
+
+----- linear -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.135939 s
+ns/query: 27.1878
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.134462 s
+ns/query: 26.8925
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.135918 s
+ns/query: 27.1837
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.137829 s
+ns/query: 27.5658
+found: 5000000
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.135278 s
+ns/query: 27.0556
+found: 5000000
+
+----- robin_hood -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.248922 s
+ns/query: 49.7844
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.245584 s
+ns/query: 49.1168
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.248045 s
+ns/query: 49.609
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.245541 s
+ns/query: 49.1082
+found: 5000000
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: hit
+time: 0.246691 s
+ns/query: 49.3381
+found: 5000000
+
+================ LF=0.95 / MISS ================
+----- chaining -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.158688 s
+ns/query: 31.7376
+found: 0
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.15796 s
+ns/query: 31.592
+found: 0
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.159743 s
+ns/query: 31.9485
+found: 0
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.160482 s
+ns/query: 32.0963
+found: 0
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.159139 s
+ns/query: 31.8277
+found: 0
+
+----- linear -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.97868 s
+ns/query: 195.736
+found: 0
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.980054 s
+ns/query: 196.011
+found: 0
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.978397 s
+ns/query: 195.679
+found: 0
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.980119 s
+ns/query: 196.024
+found: 0
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.978568 s
+ns/query: 195.714
+found: 0
+
+----- robin_hood -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.236672 s
+ns/query: 47.3344
+found: 0
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.239768 s
+ns/query: 47.9536
+found: 0
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.236583 s
+ns/query: 47.3166
+found: 0
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.238106 s
+ns/query: 47.6212
+found: 0
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.238057 s
+ns/query: 47.6114
+found: 0
+

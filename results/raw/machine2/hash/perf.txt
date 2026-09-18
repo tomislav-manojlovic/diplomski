@@ -1,0 +1,303 @@
+Machine: machine2
+CPU: 0
+
+================ chaining / miss ================
+----- RUN 1 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.15538 s
+ns/query: 31.076
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+     <not counted>      cpu_atom/cycles/                                                        (0,00%)
+        1028836581      cpu_core/cycles/                                                      
+     <not counted>      cpu_atom/instructions/                                                  (0,00%)
+         821613061      cpu_core/instructions/           #    0,80  insn per cycle            
+     <not counted>      cpu_atom/cache-references/                                              (0,00%)
+          41367598      cpu_core/cache-references/                                            
+     <not counted>      cpu_atom/cache-misses/                                                  (0,00%)
+          14498681      cpu_core/cache-misses/           #   35,05% of all cache refs         
+     <not counted>      cpu_atom/branches/                                                      (0,00%)
+         139396947      cpu_core/branches/                                                    
+     <not counted>      cpu_atom/branch-misses/                                                 (0,00%)
+           4784221      cpu_core/branch-misses/          #    3,43% of all branches           
+
+       0,303229283 seconds time elapsed
+
+       0,273930000 seconds user
+       0,029098000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.156247 s
+ns/query: 31.2495
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+         508593340      cpu_atom/cycles/                                                        (0,22%)
+        1047119643      cpu_core/cycles/                                                        (99,78%)
+         461412081      cpu_atom/instructions/           #    0,91  insn per cycle              (0,22%)
+         822130099      cpu_core/instructions/           #    0,79  insn per cycle              (99,78%)
+           8130904      cpu_atom/cache-references/                                              (0,22%)
+          40268093      cpu_core/cache-references/                                              (99,78%)
+           2443479      cpu_atom/cache-misses/           #   30,05% of all cache refs           (0,22%)
+          14338121      cpu_core/cache-misses/           #   35,61% of all cache refs           (99,78%)
+          84152528      cpu_atom/branches/                                                      (0,22%)
+         139475144      cpu_core/branches/                                                      (99,78%)
+           3414582      cpu_atom/branch-misses/          #    4,06% of all branches             (0,22%)
+           4789872      cpu_core/branch-misses/          #    3,43% of all branches             (99,78%)
+
+       0,307520487 seconds time elapsed
+
+       0,286428000 seconds user
+       0,021031000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: chaining
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.160024 s
+ns/query: 32.0048
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark chaining 1048576 5000000 0.95 miss':
+
+         755815071      cpu_atom/cycles/                                                        (0,15%)
+        1048316499      cpu_core/cycles/                                                        (99,85%)
+         676910232      cpu_atom/instructions/           #    0,90  insn per cycle              (0,15%)
+         821585048      cpu_core/instructions/           #    0,78  insn per cycle              (99,85%)
+          12139101      cpu_atom/cache-references/                                              (0,15%)
+          41287577      cpu_core/cache-references/                                              (99,85%)
+           3620386      cpu_atom/cache-misses/           #   29,82% of all cache refs           (0,15%)
+          14642623      cpu_core/cache-misses/           #   35,46% of all cache refs           (99,85%)
+         123404455      cpu_atom/branches/                                                      (0,15%)
+         139383082      cpu_core/branches/                                                      (99,85%)
+           5006410      cpu_atom/branch-misses/          #    4,06% of all branches             (0,15%)
+           4784336      cpu_core/branch-misses/          #    3,43% of all branches             (99,85%)
+
+       0,305698452 seconds time elapsed
+
+       0,276722000 seconds user
+       0,028970000 seconds sys
+
+
+
+================ linear / miss ================
+----- RUN 1 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.975918 s
+ns/query: 195.184
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        1855362578      cpu_atom/cycles/                                                        (0,06%)
+        4004702762      cpu_core/cycles/                                                        (99,94%)
+        1703461012      cpu_atom/instructions/           #    0,92  insn per cycle              (0,06%)
+        9623477748      cpu_core/instructions/           #    2,40  insn per cycle              (99,94%)
+          30341255      cpu_atom/cache-references/                                              (0,06%)
+         174080317      cpu_core/cache-references/                                              (99,94%)
+           6977792      cpu_atom/cache-misses/           #   23,00% of all cache refs           (0,06%)
+           3944637      cpu_core/cache-misses/           #    2,27% of all cache refs           (99,94%)
+         309824853      cpu_atom/branches/                                                      (0,06%)
+        2104596692      cpu_core/branches/                                                      (99,94%)
+          12668369      cpu_atom/branch-misses/          #    4,09% of all branches             (0,06%)
+           5938875      cpu_core/branch-misses/          #    0,28% of all branches             (99,94%)
+
+       1,065325718 seconds time elapsed
+
+       1,046201000 seconds user
+       0,019003000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.978232 s
+ns/query: 195.646
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        2711252717      cpu_atom/cycles/                                                        (0,04%)
+        4016821454      cpu_core/cycles/                                                        (99,96%)
+        2457956615      cpu_atom/instructions/           #    0,91  insn per cycle              (0,04%)
+        9621629644      cpu_core/instructions/           #    2,40  insn per cycle              (99,96%)
+          41719100      cpu_atom/cache-references/                                              (0,04%)
+         174053237      cpu_core/cache-references/                                              (99,96%)
+          10369585      cpu_atom/cache-misses/           #   24,86% of all cache refs           (0,04%)
+           4307645      cpu_core/cache-misses/           #    2,47% of all cache refs           (99,96%)
+         446996267      cpu_atom/branches/                                                      (0,04%)
+        2104209618      cpu_core/branches/                                                      (99,96%)
+          18290256      cpu_atom/branch-misses/          #    4,09% of all branches             (0,04%)
+           5932966      cpu_core/branch-misses/          #    0,28% of all branches             (99,96%)
+
+       1,066825422 seconds time elapsed
+
+       1,053769000 seconds user
+       0,012997000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: linear
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.979683 s
+ns/query: 195.937
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark linear 1048576 5000000 0.95 miss':
+
+        2721660992      cpu_atom/cycles/                                                        (0,04%)
+        4022028346      cpu_core/cycles/                                                        (99,96%)
+        2607393252      cpu_atom/instructions/           #    0,96  insn per cycle              (0,04%)
+        9620959930      cpu_core/instructions/           #    2,39  insn per cycle              (99,96%)
+          45753711      cpu_atom/cache-references/                                              (0,04%)
+         175909096      cpu_core/cache-references/                                              (99,96%)
+           6188313      cpu_atom/cache-misses/           #   13,53% of all cache refs           (0,04%)
+           4150302      cpu_core/cache-misses/           #    2,36% of all cache refs           (99,96%)
+         475085942      cpu_atom/branches/                                                      (0,04%)
+        2104101133      cpu_core/branches/                                                      (99,96%)
+          19025854      cpu_atom/branch-misses/          #    4,00% of all branches             (0,04%)
+           5924300      cpu_core/branch-misses/          #    0,28% of all branches             (99,96%)
+
+       1,067723735 seconds time elapsed
+
+       1,051612000 seconds user
+       0,015994000 seconds sys
+
+
+
+================ robin_hood / miss ================
+----- RUN 1 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.237673 s
+ns/query: 47.5345
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+         976639478      cpu_atom/cycles/                                                        (0,11%)
+        1371645647      cpu_core/cycles/                                                        (99,89%)
+         918679233      cpu_atom/instructions/           #    0,94  insn per cycle              (0,11%)
+        1315833455      cpu_core/instructions/           #    0,96  insn per cycle              (99,89%)
+          16069488      cpu_atom/cache-references/                                              (0,11%)
+         155452424      cpu_core/cache-references/                                              (99,89%)
+           2932015      cpu_atom/cache-misses/           #   18,25% of all cache refs           (0,11%)
+           8791055      cpu_core/cache-misses/           #    5,66% of all cache refs           (99,89%)
+         167345772      cpu_atom/branches/                                                      (0,11%)
+         290976547      cpu_core/branches/                                                      (99,89%)
+           6835283      cpu_atom/branch-misses/          #    4,08% of all branches             (0,11%)
+          10048995      cpu_core/branch-misses/          #    3,45% of all branches             (99,89%)
+
+       0,369707958 seconds time elapsed
+
+       0,351709000 seconds user
+       0,017985000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.236094 s
+ns/query: 47.2188
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+         911108977      cpu_atom/cycles/                                                        (0,12%)
+        1371502510      cpu_core/cycles/                                                        (99,88%)
+         823806889      cpu_atom/instructions/           #    0,90  insn per cycle              (0,12%)
+        1316129353      cpu_core/instructions/           #    0,96  insn per cycle              (99,88%)
+          14626428      cpu_atom/cache-references/                                              (0,12%)
+         155611917      cpu_core/cache-references/                                              (99,88%)
+           4001438      cpu_atom/cache-misses/           #   27,36% of all cache refs           (0,12%)
+           9061605      cpu_core/cache-misses/           #    5,82% of all cache refs           (99,88%)
+         150196636      cpu_atom/branches/                                                      (0,12%)
+         291016680      cpu_core/branches/                                                      (99,88%)
+           6021485      cpu_atom/branch-misses/          #    4,01% of all branches             (0,12%)
+          10187540      cpu_core/branch-misses/          #    3,50% of all branches             (99,88%)
+
+       0,370301327 seconds time elapsed
+
+       0,349208000 seconds user
+       0,021012000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: robin_hood
+N: 1048576
+capacity: 1103765
+load factor: 0.949999
+queries: 5000000
+query type: miss
+time: 0.23675 s
+ns/query: 47.3499
+found: 0
+
+ Performance counter stats for 'taskset -c 0 ./build/hash_benchmark robin_hood 1048576 5000000 0.95 miss':
+
+         941134791      cpu_atom/cycles/                                                        (0,11%)
+        1370682889      cpu_core/cycles/                                                        (99,89%)
+         901416880      cpu_atom/instructions/           #    0,96  insn per cycle              (0,11%)
+        1315598824      cpu_core/instructions/           #    0,96  insn per cycle              (99,89%)
+          15406101      cpu_atom/cache-references/                                              (0,11%)
+         154630130      cpu_core/cache-references/                                              (99,89%)
+           2190829      cpu_atom/cache-misses/           #   14,22% of all cache refs           (0,11%)
+           8844718      cpu_core/cache-misses/           #    5,72% of all cache refs           (99,89%)
+         164270763      cpu_atom/branches/                                                      (0,11%)
+         290942493      cpu_core/branches/                                                      (99,89%)
+           6638276      cpu_atom/branch-misses/          #    4,04% of all branches             (0,11%)
+          10119923      cpu_core/branch-misses/          #    3,48% of all branches             (99,89%)
+
+       0,371346399 seconds time elapsed
+
+       0,358134000 seconds user
+       0,013041000 seconds sys
+
+
+

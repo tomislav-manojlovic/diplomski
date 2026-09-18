@@ -1,0 +1,203 @@
+Machine: machine2
+CPU: 0
+
+================ csr ================
+----- RUN 1 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.324741 s
+time/run: 0.0649482 s
+ns/edge: 7.74503
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+         465547111      cpu_atom/cycles/                                                        (0,08%)
+        1654960177      cpu_core/cycles/                                                        (99,92%)
+         284610253      cpu_atom/instructions/           #    0,61  insn per cycle              (0,08%)
+        1912221900      cpu_core/instructions/           #    1,16  insn per cycle              (99,92%)
+          12334026      cpu_atom/cache-references/                                              (0,08%)
+         175604390      cpu_core/cache-references/                                              (99,92%)
+           3997127      cpu_atom/cache-misses/           #   32,41% of all cache refs           (0,08%)
+          43378001      cpu_core/cache-misses/           #   24,70% of all cache refs           (99,92%)
+          53839439      cpu_atom/branches/                                                      (0,08%)
+         321114829      cpu_core/branches/                                                      (99,92%)
+           3168570      cpu_atom/branch-misses/          #    5,89% of all branches             (0,08%)
+           5339308      cpu_core/branch-misses/          #    1,66% of all branches             (99,92%)
+
+       0,495099031 seconds time elapsed
+
+       0,448086000 seconds user
+       0,047009000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.32268 s
+time/run: 0.064536 s
+ns/edge: 7.69588
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+        1273571544      cpu_atom/cycles/                                                        (0,08%)
+        1631577711      cpu_core/cycles/                                                        (99,92%)
+        1209631304      cpu_atom/instructions/           #    0,95  insn per cycle              (0,08%)
+        1909689724      cpu_core/instructions/           #    1,17  insn per cycle              (99,92%)
+          20675172      cpu_atom/cache-references/                                              (0,08%)
+         170475258      cpu_core/cache-references/                                              (99,92%)
+           5331138      cpu_atom/cache-misses/           #   25,79% of all cache refs           (0,08%)
+          42567736      cpu_core/cache-misses/           #   24,97% of all cache refs           (99,92%)
+         218577879      cpu_atom/branches/                                                      (0,08%)
+         320706453      cpu_core/branches/                                                      (99,92%)
+           8773817      cpu_atom/branch-misses/          #    4,01% of all branches             (0,08%)
+           5342502      cpu_core/branch-misses/          #    1,67% of all branches             (99,92%)
+
+       0,484517965 seconds time elapsed
+
+       0,449554000 seconds user
+       0,034965000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: csr
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.331188 s
+time/run: 0.0662377 s
+ns/edge: 7.8988
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr 1048576 8 5 0':
+
+        1232708784      cpu_atom/cycles/                                                        (0,09%)
+        1642699829      cpu_core/cycles/                                                        (99,91%)
+        1179170490      cpu_atom/instructions/           #    0,96  insn per cycle              (0,09%)
+        1909928009      cpu_core/instructions/           #    1,16  insn per cycle              (99,91%)
+          18916903      cpu_atom/cache-references/                                              (0,09%)
+         175257965      cpu_core/cache-references/                                              (99,91%)
+           2090246      cpu_atom/cache-misses/           #   11,05% of all cache refs           (0,09%)
+          42834893      cpu_core/cache-misses/           #   24,44% of all cache refs           (99,91%)
+         214753078      cpu_atom/branches/                                                      (0,09%)
+         320742480      cpu_core/branches/                                                      (99,91%)
+           8613883      cpu_atom/branch-misses/          #    4,01% of all branches             (0,09%)
+           5349575      cpu_core/branch-misses/          #    1,67% of all branches             (99,91%)
+
+       0,486249663 seconds time elapsed
+
+       0,458225000 seconds user
+       0,027952000 seconds sys
+
+
+
+================ csr_reordered ================
+----- RUN 1 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0901675 s
+time/run: 0.0180335 s
+ns/edge: 2.15048
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+         753922923      cpu_atom/cycles/                                                        (0,14%)
+        1199813189      cpu_core/cycles/                                                        (99,86%)
+         698864981      cpu_atom/instructions/           #    0,93  insn per cycle              (0,14%)
+        2180512031      cpu_core/instructions/           #    1,82  insn per cycle              (99,86%)
+          13244145      cpu_atom/cache-references/                                              (0,14%)
+          86021338      cpu_core/cache-references/                                              (99,86%)
+           2029153      cpu_atom/cache-misses/           #   15,32% of all cache refs           (0,14%)
+          20475256      cpu_core/cache-misses/           #   23,80% of all cache refs           (99,86%)
+         126777918      cpu_atom/branches/                                                      (0,14%)
+         365955896      cpu_core/branches/                                                      (99,86%)
+           5112911      cpu_atom/branch-misses/          #    4,03% of all branches             (0,14%)
+           6249496      cpu_core/branch-misses/          #    1,71% of all branches             (99,86%)
+
+       0,344963246 seconds time elapsed
+
+       0,309910000 seconds user
+       0,034989000 seconds sys
+
+
+
+----- RUN 2 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0892668 s
+time/run: 0.0178534 s
+ns/edge: 2.129
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+         930458129      cpu_atom/cycles/                                                        (0,12%)
+        1193209715      cpu_core/cycles/                                                        (99,88%)
+         843895776      cpu_atom/instructions/           #    0,91  insn per cycle              (0,12%)
+        2179589799      cpu_core/instructions/           #    1,83  insn per cycle              (99,88%)
+          15032829      cpu_atom/cache-references/                                              (0,12%)
+          85312636      cpu_core/cache-references/                                              (99,88%)
+           3818209      cpu_atom/cache-misses/           #   25,40% of all cache refs           (0,12%)
+          20185147      cpu_core/cache-misses/           #   23,66% of all cache refs           (99,88%)
+         153880392      cpu_atom/branches/                                                      (0,12%)
+         365825093      cpu_core/branches/                                                      (99,88%)
+           6244380      cpu_atom/branch-misses/          #    4,06% of all branches             (0,12%)
+           6285538      cpu_core/branch-misses/          #    1,72% of all branches             (99,88%)
+
+       0,339930910 seconds time elapsed
+
+       0,304953000 seconds user
+       0,034994000 seconds sys
+
+
+
+----- RUN 3 -----
+implementation: csr_reordered
+vertices: 1048576
+degree: 8
+repetitions: 5
+visited vertices: 1048224
+examined edges/run: 8385788
+time: 0.0898933 s
+time/run: 0.0179787 s
+ns/edge: 2.14394
+
+ Performance counter stats for 'taskset -c 0 ./build/graph_benchmark csr_reordered 1048576 8 5 0':
+
+         847826378      cpu_atom/cycles/                                                        (0,13%)
+        1204244800      cpu_core/cycles/                                                        (99,87%)
+         749781955      cpu_atom/instructions/           #    0,88  insn per cycle              (0,13%)
+        2179952897      cpu_core/instructions/           #    1,81  insn per cycle              (99,87%)
+          12583392      cpu_atom/cache-references/                                              (0,13%)
+          87386013      cpu_core/cache-references/                                              (99,87%)
+           2569847      cpu_atom/cache-misses/           #   20,42% of all cache refs           (0,13%)
+          20326818      cpu_core/cache-misses/           #   23,26% of all cache refs           (99,87%)
+         136620437      cpu_atom/branches/                                                      (0,13%)
+         365886858      cpu_core/branches/                                                      (99,87%)
+           5631176      cpu_atom/branch-misses/          #    4,12% of all branches             (0,13%)
+           6266172      cpu_core/branch-misses/          #    1,71% of all branches             (99,87%)
+
+       0,345005339 seconds time elapsed
+
+       0,310906000 seconds user
+       0,033989000 seconds sys
+
+
+
