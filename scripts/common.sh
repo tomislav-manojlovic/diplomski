@@ -7,7 +7,7 @@ MACHINE="${1:-unknown}"
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT_DIR"
 
-start_log() {
+init_run() {
     benchmark="$1"
     type="$2"
 
