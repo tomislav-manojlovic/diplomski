@@ -1,0 +1,13 @@
+machine,N,implementation,runs,avg_time_s,avg_gflops
+machine1,1024,blocked_64,5,0.6369916,3.37131
+machine1,1024,ikj,5,0.625549,3.433124
+machine1,1024,recursive_64,5,0.474769,4.523228
+machine1,3072,blocked_64,5,17.05346,3.400054
+machine1,3072,ikj,5,17.74966,3.26667
+machine1,3072,recursive_64,5,12.94672,4.478524
+machine2,1024,blocked_64,5,0.2505726,8.570362
+machine2,1024,ikj,5,0.228324,9.405664
+machine2,1024,recursive_64,5,0.24592540000000002,8.73228
+machine2,3072,blocked_64,5,6.757786,8.58011
+machine2,3072,ikj,5,12.3819,4.68294
+machine2,3072,recursive_64,5,7.128198,8.134234

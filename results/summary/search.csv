@@ -1,0 +1,9 @@
+machine,N,implementation,runs,avg_time_s,avg_ns_query
+machine1,1048576,binary,5,1.590252,318.0508
+machine1,1048576,bst,5,1.94367,388.734
+machine1,1048576,eytzinger,5,0.7757772000000001,155.1556
+machine1,1048576,eytzinger_prefetch,5,0.622845,124.569
+machine2,1048576,binary,5,0.925667,185.1336
+machine2,1048576,bst,5,0.6770634,135.4126
+machine2,1048576,eytzinger,5,0.3041992,60.8399
+machine2,1048576,eytzinger_prefetch,5,0.2792174,55.84352
