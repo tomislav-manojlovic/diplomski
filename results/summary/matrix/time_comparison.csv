@@ -1,0 +1,13 @@
+N,machine,algorithm,time_s
+1024,machine1,blocked_64,0.636992
+1024,machine1,ikj,0.625549
+1024,machine1,recursive_64,0.474769
+1024,machine2,blocked_64,0.250573
+1024,machine2,ikj,0.228324
+1024,machine2,recursive_64,0.245925
+3072,machine1,blocked_64,17.05346
+3072,machine1,ikj,17.74966
+3072,machine1,recursive_64,12.94672
+3072,machine2,blocked_64,6.757786
+3072,machine2,ikj,12.3819
+3072,machine2,recursive_64,7.128198

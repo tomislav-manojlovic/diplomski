@@ -1,0 +1,9 @@
+N,machine,algorithm,time_s
+1048576,machine1,binary,1.590252
+1048576,machine1,bst,1.94367
+1048576,machine1,eytzinger,0.775777
+1048576,machine1,eytzinger_prefetch,0.622845
+1048576,machine2,binary,0.925667
+1048576,machine2,bst,0.677063
+1048576,machine2,eytzinger,0.304199
+1048576,machine2,eytzinger_prefetch,0.279217

@@ -1,7 +1,0 @@
-machine,N,degree,implementation,runs,avg_time_run_s,avg_ns_edge
-machine1,1048576,8,adj,5,0.1862634,22.2118
-machine1,1048576,8,csr,5,0.1879618,22.41432
-machine1,1048576,8,csr_reordered,5,0.04179744,4.984318
-machine2,1048576,8,adj,5,0.09319706,11.11368
-machine2,1048576,8,csr,5,0.06636914000000001,7.914478
-machine2,1048576,8,csr_reordered,5,0.01783112,2.126356

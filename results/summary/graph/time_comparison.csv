@@ -1,0 +1,7 @@
+N,degree,machine,algorithm,time_per_run_s
+1048576,8,machine1,adj,0.186263
+1048576,8,machine1,csr,0.187962
+1048576,8,machine1,csr_reordered,0.041797
+1048576,8,machine2,adj,0.093197
+1048576,8,machine2,csr,0.066369
+1048576,8,machine2,csr_reordered,0.017831
